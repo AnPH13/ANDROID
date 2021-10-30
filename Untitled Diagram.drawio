@@ -1,1 +1,49 @@
-<mxfile host="app.diagrams.net" modified="2021-10-30T11:35:37.233Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.100 Safari/537.36" version="15.6.2" etag="FS_7LIF9JoPAwRjGZ2le" type="github"><diagram id="A9NkU877iMs-M_YD1jBZ">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-10-30T11:46:45.630Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.100 Safari/537.36" etag="GLcHsL9EFccdZWw5GJRm" version="15.6.2" type="github">
+  <diagram id="A9NkU877iMs-M_YD1jBZ" name="Page-1">
+    <mxGraphModel dx="2228" dy="770" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ciuAda384m2Fm6nHkPKZ-1" value="user&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="425" y="270" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ciuAda384m2Fm6nHkPKZ-2" value="Đăng Nhập" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="60" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ciuAda384m2Fm6nHkPKZ-3" value="Đăng Ký" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="150" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ciuAda384m2Fm6nHkPKZ-4" value="Đăng Xuất" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="110" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ciuAda384m2Fm6nHkPKZ-5" value="Tìm Kiếm Sản Phẩm" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="240" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ciuAda384m2Fm6nHkPKZ-6" value="Hiển Thị Danh Mục Sản Phẩm" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="330" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ciuAda384m2Fm6nHkPKZ-7" value="Sắp Xếp Sản Phẩm" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="420" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ciuAda384m2Fm6nHkPKZ-8" value="Chọn Mua" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="510" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ciuAda384m2Fm6nHkPKZ-9" value="Xem Chi Tiết Sản Phẩm" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="60" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ciuAda384m2Fm6nHkPKZ-10" value="Bình Luận Sản Phẩm" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="60" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ciuAda384m2Fm6nHkPKZ-11" value="Thêm Vào Giỏ Hàng" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="60" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ciuAda384m2Fm6nHkPKZ-12" value="Cập Nhật Sản Phẩm Đã có vào Giỏ Hàng" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="150" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ciuAda384m2Fm6nHkPKZ-13" value="Xoá Sản Phẩm Khỏi Giỏ Hàng" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="110" width="140" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
