@@ -44,3 +44,8 @@
 ## 9	Chức năng mở rộng	
 		Chat trực tuyến
 ![Just a fun gif](https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif)
+```php
+<?php
+	public function main(){
+		return true;
+	}
