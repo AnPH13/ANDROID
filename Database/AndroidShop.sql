@@ -116,8 +116,8 @@ go
 alter table Reviews add constraint fk_Reviews_Account_information 
 foreign key (customer_id) references Account_information(id)
 go
-alter table Bill_details add constraint fk_Bill_details_Product 
-foreign key (product_id) references Product(id)
+alter table Bill_details add constraint fk_Bill_details_Product_details 
+foreign key (product_id) references Product_details(id)
 go
 alter table Bill_details add constraint fk_Bill_details_Bill 
 foreign key (bill_id) references Bill(id)
