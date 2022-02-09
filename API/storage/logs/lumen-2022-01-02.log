@@ -1,0 +1,16 @@
+[2022-01-02 16:54:56] local.ERROR: Cannot declare class CreateProductDetailsTable, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class CreateProductDetailsTable, because the name is already in use at E:\\xampp\\htdocs\\3class\\API\\database\\migrations\\2022_01_01_150011_create_product_details_table.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2022-01-02 16:56:38] local.ERROR: Cannot declare class CreateProductDetailsTable, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class CreateProductDetailsTable, because the name is already in use at E:\\xampp\\htdocs\\3class\\API\\database\\migrations\\2022_01_01_150011_create_product_details_table.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2022-01-02 16:57:28] local.ERROR: Cannot declare class ProductDetails, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class ProductDetails, because the name is already in use at E:\\xampp\\htdocs\\3class\\API\\database\\migrations\\2022_01_01_145225_create_product_details_table.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2022-01-02 16:58:55] local.ERROR: Cannot declare class ProductDetails, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class ProductDetails, because the name is already in use at E:\\xampp\\htdocs\\3class\\API\\database\\migrations\\2022_01_01_145225_create_product_details_table.php:7)
+[stacktrace]
+#0 {main}
+"} 

@@ -1,0 +1,9 @@
+[2022-01-03 09:33:54] local.ERROR: Command "sẻ" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"sẻ\" is not defined. at E:\\xampp\\htdocs\\3class\\API\\vendor\\symfony\\console\\Application.php:709)
+[stacktrace]
+#0 E:\\xampp\\htdocs\\3class\\API\\vendor\\symfony\\console\\Application.php(259): Symfony\\Component\\Console\\Application->find('s\\xE1\\xBA\\xBB')
+#1 E:\\xampp\\htdocs\\3class\\API\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 E:\\xampp\\htdocs\\3class\\API\\vendor\\illuminate\\console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\xampp\\htdocs\\3class\\API\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\xampp\\htdocs\\3class\\API\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
