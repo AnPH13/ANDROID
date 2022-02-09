@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\Hoc_Ky_5\\LAP_TRINH_DI_DONG\\myoran\\myoran\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "E:\\xampp_8\\htdocs\\3class\\android\\myoran\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "G:\\Hoc_Ky_5\\LAP_TRINH_DI_DONG\\myoran\\myoran\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "E:\\xampp_8\\htdocs\\3class\\android\\myoran\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

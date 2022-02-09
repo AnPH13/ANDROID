@@ -15,10 +15,10 @@ class CreateBillDetailsTable extends Migration
     {
         Schema::create('bill_details', function (Blueprint $table) {
             $table->id();
-            $table->integer("product");
-            $table->integer("bill");
-            $table->integer("quantity");
-            $table->integer("status");
+            $table->integer("product")->nullable();
+            $table->integer("bill")->nullable();
+            $table->integer("quantity")->nullable();
+            $table->integer("status")->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

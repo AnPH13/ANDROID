@@ -15,9 +15,9 @@ class CreateImagesTable extends Migration
     {
         Schema::create('images', function (Blueprint $table) {
             $table->id();
-            $table->integer("product");
-            $table->integer("review");
-            $table->string("link");
+            $table->integer("product")->nullable();
+            $table->integer("review")->nullable();
+            $table->string("link")->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

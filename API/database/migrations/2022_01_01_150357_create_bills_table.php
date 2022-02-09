@@ -15,9 +15,9 @@ class CreateBillsTable extends Migration
     {
         Schema::create('bills', function (Blueprint $table) {
             $table->id();
-            $table->integer("discount");
-            $table->integer("user");
-            $table->integer("status");
+            $table->integer("discount")->nullable();
+            $table->integer("user")->nullable();
+            $table->integer("status")->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

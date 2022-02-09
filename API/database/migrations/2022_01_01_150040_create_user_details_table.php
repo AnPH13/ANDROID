@@ -15,9 +15,9 @@ class CreateUserDetailsTable extends Migration
     {
         Schema::create('user_details', function (Blueprint $table) {
             $table->id();
-            $table->date("birthday");
-            $table->boolean("gender");
-            $table->string("avatar");
+            $table->date("birthday")->nullable();
+            $table->boolean("gender")->nullable();
+            $table->string("avatar")->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
