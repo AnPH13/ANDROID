@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:myoran/screen/account/quen_mat_khau.dart';
 import 'package:myoran/screen/login/components/LoginProvider.dart';
 
 class FormInput extends StatefulWidget {
@@ -97,6 +98,32 @@ class _FormInputState extends State<FormInput> {
               ),
             ),
           ),
+          Padding(
+              padding: const EdgeInsets.only(top: 0),
+              child: SizedBox(
+                height: 55,
+                width: 200,
+                child: TextButton(
+                  child: Text(
+                    'Quên mật khẩu?',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w900,
+                      color: Colors.white,
+                      shadows: [
+                        Shadow(
+                          color: Colors.black,
+                          offset: Offset(2, 2),
+                          blurRadius: 3,
+                        )
+                      ],
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => QuenMatKhau()));
+                  },
+                ),
+              )),
           Padding(
             padding: const EdgeInsets.only(top: 10),
             child: SizedBox(

@@ -7,6 +7,7 @@ import 'package:myoran/screen/layout/product_promo.dart';
 import 'package:myoran/screen/layout/bottom_bar.dart';
 import 'package:myoran/screen/login/login.dart';
 import 'package:myoran/screen/message/message.dart';
+import 'package:myoran/screen/message/nhantin.dart';
 import 'package:myoran/screen/search/search.dart';
 import 'package:myoran/screen/shopping_cart/shopping_cart.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -62,7 +63,7 @@ class _HomeState extends State<Home> {
             padding: EdgeInsets.zero,
             constraints: const BoxConstraints(),
             onPressed: () {
-              Route route = MaterialPageRoute(builder: (context) => message());
+              Route route = MaterialPageRoute(builder: (context) => NhanTin());
               Navigator.push(context, route);
             },
             icon: Icon(Icons.chat_bubble_outline, color: Colors.black),

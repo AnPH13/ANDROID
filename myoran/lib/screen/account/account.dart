@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:myoran/screen/account/chinhsuataikhoan.dart';
 import 'package:myoran/screen/layout/bottom_bar.dart';
 import 'package:myoran/screen/layout/history_button.dart';
 import 'package:myoran/screen/search/search.dart';
@@ -90,9 +91,12 @@ class _AccountState extends State<Account> {
                 width: double.maxFinite,
                 height: 40,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                     Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => SuaThongTin()));
+                  },
                   child: Text(
-                    'Tài khoản của tôi',
+                    'Chỉnh sửa tài khoản',
                     style: TextStyle(
                       color: Colors.black,
                     ),

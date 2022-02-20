@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:myoran/screen/account/account.dart';
+import 'package:myoran/screen/account/quen_mat_khau.dart';
 import 'package:myoran/screen/get_started.dart/get_started.dart';
 import 'package:myoran/screen/home/home.dart';
 
 import 'package:myoran/screen/login/login.dart';
+import 'package:myoran/screen/login/login1.dart';
 import 'package:myoran/screen/product_detail/product_detail.dart';
 import 'package:myoran/screen/product_detail/product_detail1.dart';
 import 'package:myoran/screen/register/register.dart';
