@@ -23,6 +23,7 @@ $router->group(['prefix' => 'api'], function () use ($router) {
     $router->post('/login', 'AuthController@login');
     $router->post('/register', 'AuthController@register');
     $router->group(['middleware' => 'auth'], function () use ($router){
+        $router->get('/user_id', 'AuthController@getUser');
         $router->group(['prefix'=>'product'], function () use ($router){
             $router->get('/', 'ProductController@index');
             $router->post('/', 'ProductController@store');

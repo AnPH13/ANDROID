@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Http\Middleware\Authenticate;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Tymon\JWTAuth\Contracts\Providers\Auth;
 
 class AuthController extends Controller
 {
@@ -14,6 +15,12 @@ class AuthController extends Controller
             'name' => ['required', 'max:255'],
             'email' => ['required','email'],
             'password' => ['required','min:6'],
+        ],[
+            'name.required' => 'không được bỏ trống full name',
+            'email.required' => 'không được bỏ trống email',
+            'email.email' => 'email sai định dạng',
+            'password.required' => 'không được bỏ trống password',
+            'password.min' => 'password ít nhất 6 ký tự',
         ]);
 
         // Check if user already exist
@@ -53,12 +60,15 @@ class AuthController extends Controller
         $this->validate($request,[
             'email' => ['required', 'email'],
             'password' => ['required','min:6'],
+        ],[
+            'email.email' => "email không hợp lệ",
+            'password.min' => 'password phải có ít nhất 6 ký tự'
         ]);
 
         $credentials = request(['email', 'password']);
 
         if (!$token = auth()->attempt($credentials)) {
-            return response()->json(['error' => 'ten dang nhap hoac password khong dung'], 401);
+            return response()->json(['error' => 'tên đăng nhập hoặc mật khẩu không đúng'], 401);
         }
 
         return $this->respondWithToken($token);
@@ -78,5 +88,8 @@ class AuthController extends Controller
             'token_type' => 'jwt',
             'session kết thúc sau' => auth()->factory()->getTTL() * 60
         ]);
+    }
+    protected function getUser(){
+        return Auth::user();
     }
 }

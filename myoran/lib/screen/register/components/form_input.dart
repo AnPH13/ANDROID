@@ -215,7 +215,15 @@ class _FormInputState extends State<FormInput> {
                       child: ElevatedButton(
                         onPressed: () {
                           if (_pascontroller.text != _pascontroller1.text) {
-                            print('sai');
+                            showDialog(
+                                context: context,
+                                builder: (BuildContext context) {
+                                  return AlertDialog(
+                                    content: Text(
+                                      'passwword không trùng khớp',
+                                    ),
+                                  );
+                                });
                           } else {
                             _auth.Resgister(context, _namecontroller.text,
                                 _emailcontroller.text, _pascontroller.text);

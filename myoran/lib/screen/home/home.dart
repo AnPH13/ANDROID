@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:myoran/model/product.dart';
+import 'package:myoran/screen/home/homeProvider.dart';
 import 'package:myoran/screen/layout/banner.dart';
 import 'package:myoran/screen/layout/product_promo.dart';
 import 'package:myoran/screen/layout/bottom_bar.dart';
@@ -18,13 +20,11 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   late SharedPreferences sharedPreferences;
-
   @override
   void initState() {
     super.initState();
     checkLoginStatus();
   }
-
   checkLoginStatus() async {
     sharedPreferences = await SharedPreferences.getInstance();
     if (sharedPreferences.getString("token") == null) {
