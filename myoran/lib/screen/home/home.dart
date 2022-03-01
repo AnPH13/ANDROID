@@ -1,5 +1,8 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart';
+import 'package:myoran/constraint.dart';
 import 'package:myoran/model/product.dart';
 import 'package:myoran/screen/home/homeProvider.dart';
 import 'package:myoran/screen/layout/banner.dart';
@@ -21,10 +24,30 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   late SharedPreferences sharedPreferences;
+
+  String? _test;
   @override
   void initState() {
     super.initState();
+    getData();
     checkLoginStatus();
+
+  }
+  getData() async{
+    var dio = Dio();
+    var token = await getToken() ?? "";
+    dio.options.headers['Authorization'] = 'Bearer ' + token ;
+    try{
+    var res = await dio.get(productUrl);
+    var data = res.data;
+          print(data);
+          setState(() {
+            _test = (data[0] as Map<String, dynamic>)['name'];
+          });
+    } catch(e){
+      print(e.toString());
+    }   
+         
   }
   checkLoginStatus() async {
     sharedPreferences = await SharedPreferences.getInstance();
@@ -32,6 +55,7 @@ class _HomeState extends State<Home> {
       Navigator.of(context).pushAndRemoveUntil(
           MaterialPageRoute(builder: (BuildContext context) => Login()),
           (Route<dynamic> route) => false);
+          
     }
   }
 
@@ -135,7 +159,7 @@ class _HomeState extends State<Home> {
                               onPressed: () {},
                               style: ElevatedButton.styleFrom(
                                   primary: Colors.white),
-                              child: const Text('Áo thun',
+                              child: Text(_test ?? "",
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.w800))),
@@ -177,4 +201,5 @@ class _HomeState extends State<Home> {
       bottomNavigationBar: BottomBar(),
     );
   }
+
 }
